@@ -1,0 +1,179 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROSODY-AWARE SPEECHT5 FOR EXPRESSIVE NEURAL TTS
+</title>
+    <link rel="shortcut icon" href="./img/ms.jpg">
+    <link rel="icon" href="./img/ms.jpg">
+    <link rel="apple-touch-icon" href="./img/ms.jpg">
+</head>
+<body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125850295-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-125850295-1');
+</script>
+
+<article>
+    <header>
+        <h1>PROSODY-AWARE SPEECHT5 FOR EXPRESSIVE NEURAL TTS</h1>
+    </header>
+</article>
+
+<div><p><b>Authors:</b> Yan Deng, Long Zhou, Yuanhao Yi, Shujie Liu, Lei He</p></div>
+
+<div><p><b>Abstract:</b> SpeechT5, a multimodal learning framework which explores encoder-decoder pre-training by leveraging both unlabeled speech and text, has been proven to be effective on a wide variety of speech processing tasks. In this paper, we enhance SpeechT5 by adding a new sub-task on prosody modeling (prosody-aware SpeechT5) for neural text-to-speech (TTS), which can improve the model capability to learn richer contextual representations through multi-task learning. In the prosody-aware SpeechT5 training framework, most modules in neural TTS can be pre-trained with large-scale unlabeled speech and text corpus, including encoder, decoder, and variance adaptor. Experimental results show that the proposed prosody-aware SpeechT5 is effective at improving the expressiveness of neural TTS: 1) the CMOS (comparison mean opinion score) gain is 0.154 for texts from news domain and 0.114 for texts from audiobook domain; 2) the prosody related issues in synthetic speech are reduced by 19.02% in subjective evaluation.
+</p>
+</div>
+
+<div><p><b>All samples are randomly selected from our test sets used for CMOS evaluation.</b>
+</p>
+</div>
+
+<div>
+    <h2>News</h2>
+    <table border="1" style="width: 1300px;">
+        <tr>
+            <th>Text</th>
+            <th>Neural TTS (Baseline)</th>
+            <th>Neural TTS + Prosody-aware SpeechT5</th>
+        </tr>
+        <tr>
+            <td>In the open letters, the company's management lays out its case for focusing on sustainability.</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-Newscast-0000000202.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-Newscast-0000000202.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>There are more than 6,000 vacant houses in the Oakland area, according to the Census Bureau.</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-Newscast-0000000187.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-Newscast-0000000187.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>He said the agency facilitated nearly 2,500 adoptions in 2019 and there are 1,400 children now available for adoption.</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-Newscast-0000000183.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-Newscast-0000000183.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h2>Audiobook</h2>
+    <table border="1" style="width: 1300px;">
+        <tr>
+            <th>Text</th>
+            <th>Neural TTS (Baseline)</th>
+            <th>Neural TTS + Prosody-aware SpeechT5</th>
+        </tr>
+        <tr>
+            <td>And this method of treating the case was much more effectual in making them disposed to avoid committing a similar fault another time than any direct rebukes or expressions of displeasure addressed personally to them would have been.</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-eBook-0000000100.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-eBook-0000000100.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>A few years back one of their slaves, a coachman, was kept on the coach box one cold night when they were out at a ball until he became almost frozen to death, in fact he did die in the infirmary from the effects of the frost about one week afterwards."</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-eBook-0000000097.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-eBook-0000000097.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h2>In-domain</h2>
+    <table border="1" style="width: 1300px;">
+        <tr>
+            <th>Text</th>
+            <th>Neural TTS (Baseline)</th>
+            <th>Neural TTS + Prosody-aware SpeechT5</th>
+        </tr>
+        <tr>
+            <td>He returned to the field in June 2017.</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-GeneralSentence-0000000017.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-GeneralSentence-0000000017.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Services are an increasingly important element of the solutions-centric engagement model with customers.</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-GeneralSentence-0000000026.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-GeneralSentence-0000000026.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>For example, we place a session cookie on your computer each time you visit our Website.</td>
+            <td>
+                <audio controls>
+                    <source src="wav/baseline-GeneralSentence-0000000020.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="wav/pretrain-GeneralSentence-0000000020.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+
+</html>
